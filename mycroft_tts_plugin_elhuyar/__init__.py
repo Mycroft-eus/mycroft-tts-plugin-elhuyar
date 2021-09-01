@@ -73,7 +73,7 @@ class ElhuyarTTSValidator(TTSValidator):
         super(ElhuyarTTSValidator, self).__init__(tts)
 
     def validate_lang(self):
-        lang = self.lang
+        lang = self.tts.lang
         if lang.lower() not in supported_langs:
             raise ValueError("Language not supported by Elhuyar TTS: {}"
                              .format(lang))
