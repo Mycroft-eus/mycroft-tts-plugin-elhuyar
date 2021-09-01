@@ -27,9 +27,6 @@ class ElhuyarTTSPlugin(TTS):
     """Interface to Elhuyar TTS"""
 
     def __init__(self, lang, config):
-        if lang.lower() not in supported_langs and \
-                                     lang[:2].lower() in supported_langs:
-            lang = lang[:2]
         super(ElhuyarTTSPlugin, self).__init__(lang,
                                                config,
                                                ElhuyarTTSValidator(self),

@@ -5,7 +5,7 @@ import pathlib
 
 PLUGIN_TYPE = 'tts'
 PLUGIN_MODULE_NAME = 'elhuyar_tts'
-PLUGIN_TARGET = 'mycroft-tts-plugin-elhuyar:ElhuyarTTSPlugin'
+PLUGIN_TARGET = 'mycroft_tts_plugin_elhuyar:ElhuyarTTSPlugin'
 
 PLUGIN_KEYWORDS = 'mycroft plugin {}'.format(PLUGIN_TYPE)
 PLUGIN_NAMESPACE = 'mycroft.plugin.{}'.format(PLUGIN_TYPE)
