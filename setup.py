@@ -15,7 +15,7 @@ PLUGIN_ENTRY_POINT = '{} = {}'.format(PLUGIN_MODULE_NAME, PLUGIN_TARGET)
 HERE = pathlib.Path(__file__).parent
 
 # The text of the README file
-README = (HERE / "README.md").read_text()
+README = (HERE / "README.rst").read_text()
 
 req_file = join(dirname(abspath(__file__)), 'requirements.txt')
 if exists(req_file):
